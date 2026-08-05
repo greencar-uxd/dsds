@@ -5,5 +5,5 @@ export interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElemen
   label?: React.ReactNode;
 }
 
-/** Labeled checkbox with a cobalt checked state. */
+/** Labeled checkbox with an accent checked state. */
 export function Checkbox(props: CheckboxProps): JSX.Element;

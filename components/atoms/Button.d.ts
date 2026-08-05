@@ -15,6 +15,6 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 /**
- * Primary action control. Ink-forward `primary`, `cobalt` accent, plus outline/ghost/danger.
+ * Primary action control. Ink-forward `primary`, `accent`, plus outline/ghost/danger.
  */
 export function Button(props: ButtonProps): JSX.Element;

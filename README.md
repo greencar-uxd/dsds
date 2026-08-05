@@ -1,10 +1,10 @@
-# Daniel's Design System
+# DNL STUDIO Design System
 
 **🌐 Language / 언어: English (this file) · [한국어](./README.ko.md)**
 
 A monochrome-first design system with a single signature accent (**Accent `#2D5BFF`**), built for a personal portfolio / website and for prototyping mobile service screens. Light mode is the base; full dark mode is supported. Korean + English are first-class — the entire type system runs on **Pretendard**, which covers both scripts in one family.
 
-> **Sources / origin:** Built from scratch (no prior codebase, Figma, or brand guide). The originally-attached `design-system/` local folder read as empty, so all foundations were authored fresh and confirmed with the user step by step (font → color → components). If a real codebase or brand later appears, reconcile tokens here first.
+> **Sources / origin:** Built from scratch (no prior codebase, Figma, or brand guide); all foundations were authored fresh and confirmed step by step (font → color → components). Rebranded to **DNL STUDIO Design System (DSDS)** in 2026-08 — see [`brand.html`](./brand.html) for naming, wordmark, and voice rules.
 
 ---
 
@@ -119,7 +119,7 @@ This system ships **source** — there is no compiler or runtime bundle. Link th
 
 ```jsx
 // 1) Styles — once, at your app root
-import "accent-mono-design-system/styles.css";
+import "dsds/styles.css";
 //   plain HTML alternative:  <link rel="stylesheet" href="styles.css">
 
 // 2) Components — from the barrel, or per-file

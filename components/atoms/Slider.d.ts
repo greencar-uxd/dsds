@@ -13,5 +13,5 @@ export interface SliderProps extends Omit<React.InputHTMLAttributes<HTMLInputEle
   showValue?: boolean;
 }
 
-/** Range slider with a cobalt fill track. */
+/** Range slider with an accent fill track. */
 export function Slider(props: SliderProps): JSX.Element;

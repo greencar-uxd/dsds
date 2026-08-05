@@ -1,4 +1,4 @@
-<!-- @dsCard group="Brand" viewport="700x200" name="Wordmark (placeholder)" subtitle="Typographic lockup — pending a real logo" -->
+<!-- @dsCard group="Brand" viewport="700x200" name="Wordmark" subtitle="DNL(Bold .02em) + STUDIO(Light .16em) + 액센트 점" -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +7,19 @@
 <style>
   html,body{margin:0;background:var(--surface-card);font-family:var(--font-display);-webkit-font-smoothing:antialiased;}
   .wrap{padding:34px 36px;display:flex;align-items:center;gap:44px;flex-wrap:wrap;}
-  .mark{display:inline-flex;align-items:center;gap:10px;font-weight:var(--fw-bold);font-size:34px;letter-spacing:var(--ls-tight);color:var(--text-primary);}
-  .mark .dot{width:13px;height:13px;border-radius:50%;background:var(--accent);transform:translateY(2px);}
+  .mark{display:inline-flex;align-items:baseline;font-weight:var(--fw-bold);font-size:34px;color:var(--text-primary);}
+  .mark b{font-weight:var(--fw-bold);letter-spacing:.02em;}
+  .mark i{font-style:normal;font-weight:var(--fw-light);letter-spacing:.16em;margin-left:.42em;}
+  .mark .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-left:10px;align-self:center;}
   .mark.inv{background:var(--surface-inverse);color:var(--text-inverse);padding:16px 22px;border-radius:var(--radius-lg);}
   .note{font-family:var(--font-text);font:var(--text-caption);color:var(--text-tertiary);max-width:200px;}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <span class="mark">Daniel</span>
-  <span class="mark inv">Daniel</span>
-  <span class="note">Placeholder wordmark — Pretendard Bold. Replace with a real logo when available.</span>
+  <span class="mark"><b>DNL</b><i>STUDIO</i><span class="dot"></span></span>
+  <span class="mark inv"><b>DNL</b><i>STUDIO</i><span class="dot"></span></span>
+  <span class="note">Pretendard. 256px 이하에서는 STUDIO를 뺀다 — 파비콘이 그 예. 자간·무게 임의 변경 금지.</span>
 </div>
 </body>
 </html>

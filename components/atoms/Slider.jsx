@@ -1,6 +1,6 @@
 import React from 'react';
 
-/** Slider — range input with cobalt fill. Controlled (value) or uncontrolled (defaultValue). */
+/** Slider — range input with accent fill. Controlled (value) or uncontrolled (defaultValue). */
 export function Slider({ value, defaultValue, min = 0, max = 100, step = 1, onChange, label, showValue = false, className = '', ...rest }) {
   const id = React.useId();
   const [internal, setInternal] = React.useState(defaultValue != null ? defaultValue : min);

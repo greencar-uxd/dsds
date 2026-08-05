@@ -1,6 +1,6 @@
 ---
 name: accent-mono-design
-description: Use this skill to generate well-branded interfaces and assets for the Daniel's Design System (monochrome surfaces + a single accent, Pretendard type, Korean+English, light & dark), either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
+description: Use this skill to generate well-branded interfaces and assets for the DNL STUDIO Design System (monochrome surfaces + a single accent, Pretendard type, Korean+English, light & dark), either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
 user-invocable: true
 ---
 

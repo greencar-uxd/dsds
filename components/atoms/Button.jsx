@@ -2,7 +2,7 @@ import React from 'react';
 
 /**
  * Button — primary action control.
- * variant: primary (ink) · accent (cobalt) · secondary (outline) · ghost · danger
+ * variant: primary (ink) · accent · secondary (outline) · ghost · danger
  */
 export function Button({
   variant = 'primary',

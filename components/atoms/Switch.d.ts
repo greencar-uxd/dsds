@@ -4,5 +4,5 @@ export interface SwitchProps extends React.InputHTMLAttributes<HTMLInputElement>
   label?: React.ReactNode;
 }
 
-/** Toggle switch with a cobalt active track. Behaves as a checkbox. */
+/** Toggle switch with an accent active track. Behaves as a checkbox. */
 export function Switch(props: SwitchProps): JSX.Element;

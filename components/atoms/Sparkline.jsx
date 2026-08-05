@@ -2,7 +2,7 @@ import React from 'react';
 
 /**
  * Sparkline — compact inline trend line (no axes). Dependency-free SVG.
- * The last point is the signature cobalt dot. data: number[].
+ * The last point is the signature accent dot. data: number[].
  */
 export function Sparkline({ data = [], width = 120, height = 32, strokeWidth = 2, area = true, label, className = '', ...rest }) {
   const n = data.length;

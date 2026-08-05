@@ -11,6 +11,7 @@
   --font-mono:    var(--font-text); /* single-family system — data/numeric role uses Pretendard with tabular-nums */
 
   /* ---- Weights (Pretendard axis 100–900) ---- */
+  --fw-light:    300; /* @kind font */
   --fw-regular:  400; /* @kind font */
   --fw-medium:   500; /* @kind font */
   --fw-semibold: 600; /* @kind font */

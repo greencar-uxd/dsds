@@ -12,5 +12,5 @@ export interface BottomNavProps extends React.HTMLAttributes<HTMLElement> {
   onChange?: (value: string) => void;
 }
 
-/** Mobile bottom tab bar; active item uses the cobalt accent. */
+/** Mobile bottom tab bar; active item uses the accent color. */
 export function BottomNav(props: BottomNavProps): JSX.Element;

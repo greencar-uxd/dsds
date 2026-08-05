@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://greencar-uxd.github.io/design-system/</loc></url>
-  <url><loc>https://greencar-uxd.github.io/design-system/gallery/foundations.html</loc></url>
-  <url><loc>https://greencar-uxd.github.io/design-system/gallery/ux-writing.html</loc></url>
-  <url><loc>https://greencar-uxd.github.io/design-system/gallery/atoms.html</loc></url>
-  <url><loc>https://greencar-uxd.github.io/design-system/gallery/molecules.html</loc></url>
-  <url><loc>https://greencar-uxd.github.io/design-system/gallery/organisms.html</loc></url>
+  <url><loc>https://greencar-uxd.github.io/dsds/</loc></url>
+  <url><loc>https://greencar-uxd.github.io/dsds/brand.html</loc></url>
+  <url><loc>https://greencar-uxd.github.io/dsds/gallery/foundations.html</loc></url>
+  <url><loc>https://greencar-uxd.github.io/dsds/gallery/ux-writing.html</loc></url>
+  <url><loc>https://greencar-uxd.github.io/dsds/gallery/atoms.html</loc></url>
+  <url><loc>https://greencar-uxd.github.io/dsds/gallery/molecules.html</loc></url>
+  <url><loc>https://greencar-uxd.github.io/dsds/gallery/organisms.html</loc></url>
 </urlset>

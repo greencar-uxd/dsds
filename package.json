@@ -1,17 +1,18 @@
 {
-  "name": "accent-mono-design-system",
+  "name": "dsds",
   "version": "0.1.0",
-  "description": "Daniel's Design System: monochrome surfaces with a single accent, Pretendard type (Korean + English), light & dark. 37 React components and a token-driven CSS layer.",
+  "description": "DNL STUDIO Design System (DSDS): monochrome surfaces with a single accent, Pretendard type (Korean + English), light & dark. 43 React components and a token-driven CSS layer.",
   "type": "module",
   "license": "MIT",
   "author": "Greencar-UXD",
-  "homepage": "https://github.com/Greencar-UXD/design-system#readme",
+  "homepage": "https://greencar-uxd.github.io/dsds/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Greencar-UXD/design-system.git"
+    "url": "git+https://github.com/greencar-uxd/dsds.git"
   },
   "keywords": [
     "design-system",
+    "dsds",
     "react",
     "css",
     "design-tokens",

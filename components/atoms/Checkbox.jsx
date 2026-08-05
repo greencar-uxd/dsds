@@ -1,6 +1,6 @@
 import React from 'react';
 
-/** Checkbox — labeled checkbox with cobalt checked state. */
+/** Checkbox — labeled checkbox with an accent checked state. */
 export function Checkbox({ label, className = '', disabled = false, ...rest }) {
   return (
     <label className={['ds-check', className].filter(Boolean).join(' ')}>

@@ -7,5 +7,5 @@ export interface ProgressProps extends React.HTMLAttributes<HTMLDivElement> {
   indeterminate?: boolean;
 }
 
-/** Linear progress bar (cobalt fill). Determinate via `value`, or `indeterminate`. */
+/** Linear progress bar (accent fill). Determinate via `value`, or `indeterminate`. */
 export function Progress(props: ProgressProps): JSX.Element;

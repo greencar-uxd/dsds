@@ -1,6 +1,6 @@
 import React from 'react';
 
-/** Radio — labeled radio button with cobalt selected state. */
+/** Radio — labeled radio button with an accent selected state. */
 export function Radio({ label, className = '', disabled = false, ...rest }) {
   return (
     <label className={['ds-check', 'ds-check--radio', className].filter(Boolean).join(' ')}>

@@ -12,5 +12,5 @@ export interface StepperProps {
   className?: string;
 }
 
-/** Horizontal step progress indicator — completed steps show a check, current is cobalt. */
+/** Horizontal step progress indicator — completed steps show a check, current uses the accent color. */
 export function Stepper(props: StepperProps): JSX.Element;

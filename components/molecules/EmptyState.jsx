@@ -1,7 +1,7 @@
 import React from 'react';
 
 /** EmptyState — placeholder for no-data/empty views.
- *  With no `icon`, shows the signature motif: a monochrome field with one cobalt point. */
+ *  With no `icon`, shows the signature motif: a monochrome field with one accent point. */
 export function EmptyState({ icon, title, description, action, className = '', ...rest }) {
   return (
     <div className={['ds-empty', className].filter(Boolean).join(' ')} {...rest}>

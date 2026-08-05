@@ -5,5 +5,5 @@ export interface DotsProps extends React.HTMLAttributes<HTMLSpanElement> {
   label?: string;
 }
 
-/** Signature inline loading indicator — three marks, the cobalt point landing last. */
+/** Signature inline loading indicator — three marks, the accent point landing last. */
 export function Dots(props: DotsProps): JSX.Element;

@@ -7,5 +7,5 @@ export interface SpinnerProps extends React.HTMLAttributes<HTMLSpanElement> {
   label?: string;
 }
 
-/** Circular loading spinner (cobalt arc). */
+/** Circular loading spinner (accent arc). */
 export function Spinner(props: SpinnerProps): JSX.Element;

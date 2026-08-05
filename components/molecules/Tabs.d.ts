@@ -15,5 +15,5 @@ export interface TabsProps {
   className?: string;
 }
 
-/** Underline tab bar (controlled). Active indicator uses the cobalt accent. */
+/** Underline tab bar (controlled). Active indicator uses the accent color. */
 export function Tabs(props: TabsProps): JSX.Element;

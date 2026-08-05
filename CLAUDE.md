@@ -20,13 +20,14 @@
 
 ## 이 레포 고유 규칙
 
-**구성 (Daniel's Design System / 다니엘의 디자인 시스템)**
+**구성 (DNL STUDIO Design System / DNL STUDIO 디자인 시스템)**
 - 무채색 베이스 + 단일 강조색 `#2D5BFF`, Pretendard 단일 서체(한/영), 라이트·다크는 `data-theme`.
 - 빌드 없음 — 정적 HTML/CSS/JS. `tokens/*.css`가 스타일의 source of truth, 컴포넌트는 `components/`(React) + `css/`.
 - 루트 `SKILL.md`(accent-mono-design)와 `.claude/skills/`는 이 시스템으로 디자인하기 위한 Claude 스킬.
+- `brand.html`(Brand 장)은 Foundations보다 앞에 온다 — 이건 화면 컴포넌트 라이브러리이기 이전에 브랜드 시스템이다.
 
 **배포**
-- GitHub Pages가 `main` 브랜치를 그대로 서빙(워크플로 없음): https://greencar-uxd.github.io/design-system/
+- GitHub Pages가 `main` 브랜치를 그대로 서빙(워크플로 없음): https://greencar-uxd.github.io/dsds/
 - `main` 커밋 = 즉시 라이브. 커밋 전에 배포돼도 되는 상태인지 확인할 것.
 - 레포 전체가 공개 서빙됨 — 비공개 자료·개인정보를 이 레포에 넣지 않는다.
 
@@ -38,7 +39,8 @@
 
 **절대 건드리지 말 것**
 - 내비게이션에 Guide·GitHub 메뉴를 다시 넣지 않는다 (2026-07 의도적으로 제거).
-- Daniel "D" 파비콘 세트(`assets/favicon*`, `favicon.ico`)는 확정된 브랜드 마크 — 임의 교체 금지.
+- `DNL` 워드마크 파비콘 세트(`assets/favicon*`, `favicon.ico`)는 확정된 브랜드 마크 — 임의 교체 금지.
+- 표기 규칙(디엔엘 / DNL STUDIO / DNL / DSDS)과 금지어는 `brand.html`이 원본. 화면 문구에 `DSDS`를 쓰지 않는다.
 - 루트 `SKILL.md`와 `.claude/skills/`는 삭제하지 않는다.
 
 **반복해서 틀렸던 것**

@@ -7,21 +7,21 @@
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="./assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
-<title>DNL STUDIO Design System</title>
-<meta name="description" content="Monochrome surfaces with a single accent. Pretendard type (Korean + English), light & dark. 37 React components + token-driven CSS.">
+<title>Brand · DNL STUDIO Design System</title>
+<meta name="description" content="DNL STUDIO 브랜드 기준 — 표기 · 워드마크 · 색과 서체 · 문장 · 문서 서식 · 채널별 적용.">
 <!-- Open Graph / link preview -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DNL STUDIO Design System">
-<meta property="og:title" content="DNL STUDIO Design System">
-<meta property="og:description" content="Monochrome surfaces with a single accent. Pretendard type (Korean + English), light & dark. 37 React components + token-driven CSS.">
-<meta property="og:url" content="https://greencar-uxd.github.io/dsds/">
+<meta property="og:title" content="Brand · DNL STUDIO Design System">
+<meta property="og:description" content="DNL STUDIO 브랜드 기준 — 표기 · 워드마크 · 색과 서체 · 문장 · 문서 서식 · 채널별 적용.">
+<meta property="og:url" content="https://greencar-uxd.github.io/dsds/brand.html">
 <meta property="og:image" content="https://greencar-uxd.github.io/dsds/assets/og-cover.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="DNL STUDIO Design System. Monochrome neutral ramp with a single accent.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DNL STUDIO Design System">
-<meta name="twitter:description" content="Monochrome surfaces with a single accent. Pretendard type (Korean + English), light & dark.">
+<meta name="twitter:title" content="Brand · DNL STUDIO Design System">
+<meta name="twitter:description" content="DNL STUDIO 브랜드 기준 — 표기 · 워드마크 · 색과 서체 · 문장 · 문서 서식 · 채널별 적용.">
 <meta name="twitter:image" content="https://greencar-uxd.github.io/dsds/assets/og-cover.png">
 <link rel="stylesheet" href="./styles.css">
 <style>
@@ -123,14 +123,34 @@
     .gx-code{padding:16px;}
   }
 </style>
+<style>
+  .bd-tbl{width:100%;border-collapse:collapse;font:var(--text-body-sm);margin-top:24px;}
+  .bd-tbl th,.bd-tbl td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
+  .bd-tbl th{color:var(--text-tertiary);font-weight:var(--fw-semibold);white-space:nowrap;}
+  .bd-tbl code{background:var(--surface-sunken);padding:1px 6px;border-radius:4px;font-family:var(--font-mono);}
+  .bd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px;}
+  .bd-card{background:var(--surface-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;}
+  .bd-card b{font:var(--text-label);}
+  .bd-wm{background:var(--surface-sunken);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px;display:flex;align-items:center;justify-content:center;min-height:120px;}
+  .bd-wm .m{font-family:var(--font-display);font-size:30px;color:var(--text-primary);display:inline-flex;align-items:baseline;}
+  .bd-wm .m b{font-weight:var(--fw-bold);letter-spacing:.02em;}
+  .bd-wm .m i{font-style:normal;font-weight:var(--fw-light);letter-spacing:.16em;margin-left:.42em;}
+  .bd-wm .m s{text-decoration:none;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-left:8px;align-self:center;}
+  .bd-wm.is-dark{background:#0c0e11;border-color:#262a30;} .bd-wm.is-dark .m{color:#f3f4f6;}
+  .bd-sw{height:56px;border-radius:var(--radius-md);margin-bottom:12px;border:1px solid var(--border);}
+  .bd-list{margin:10px 0 0;padding-left:18px;font:var(--text-body-sm);color:var(--text-secondary);}
+  .bd-list li{margin:6px 0;}
+  .bd-bad{text-decoration:line-through;color:var(--text-tertiary);}
+  .bd-sign{background:var(--surface-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;margin-top:24px;font:var(--text-body);line-height:1.9;}
+</style>
 </head>
 <body>
 <header class="gx-top">
   <a class="gx-brand" href="./index.html" aria-label="DNL STUDIO Design System 홈"><b class="wm-a">DNL</b><span class="wm-b">STUDIO</span><span class="gx-dot" aria-hidden="true"></span><span class="wm-c">Design System</span></a>
   <div class="gx-right">
   <nav class="gx-nav" id="gxNav">
-    <a href="./index.html" aria-current="page">Overview</a>
-    <a href="./brand.html">Brand</a>
+    <a href="./index.html">Overview</a>
+    <a href="./brand.html" aria-current="page">Brand</a>
     <a href="./gallery/foundations.html">Foundations</a>
     <a href="./gallery/atoms.html">Atoms</a>
     <a href="./gallery/molecules.html">Molecules</a>
@@ -143,126 +163,110 @@
 </header>
 
 <main>
-  <!-- HERO -->
   <section class="gx-wrap gx-hero">
     <div class="gx-hero__copy">
-      <p class="gx-eyebrow"><span class="gx-eyebrow__mark"></span>Mono design system · v0.1.0</p>
-      <h1>모노톤 위에 <span class="gx-nowrap">단 하나의 <span class="gx-accent">강조색</span></span></h1>
-      <p class="gx-lead">표면은 전부 모노톤, 강조는 단 하나면 충분합니다. Pretendard 한 패밀리로 한글과 영문을, 라이트와 다크를 모두 담았습니다.</p>
-      <div class="gx-cta">
-        <a class="ds-btn ds-btn--primary ds-btn--lg" href="./gallery/atoms.html">컴포넌트 둘러보기 →</a>
-        <a class="ds-btn ds-btn--secondary ds-btn--lg" href="./gallery/foundations.html">Foundations</a>
-      </div>
-      <p class="gx-spec"><b>43</b> components · <b>1</b> accent · <b>2</b> themes · <b>4px</b> grid</p>
+      <p class="gx-eyebrow"><span class="gx-eyebrow__mark"></span>Brand · 표기 · 워드마크 · 문장</p>
+      <h1>이름이 먼저, <span class="gx-nowrap">그다음이 <span class="gx-accent">화면</span></span></h1>
+      <p class="gx-lead">이 장은 컴포넌트보다 앞에 옵니다. 견적서 한 장과 홈페이지 한 화면이 같은 브랜드로 읽히려면, 표기·색·서체·문장이 먼저 같아야 하기 때문입니다.</p>
     </div>
   </section>
 
-  <!-- EXPLORE -->
-  <section class="gx-wrap gx-section" id="explore">
-    <p class="gx-kicker">Explore</p>
-    <h2 class="gx-h2">시스템 둘러보기</h2>
-    <p class="gx-sub">기반 토큰부터 원자·분자·유기체 컴포넌트까지, 아토믹 디자인 구조로 정리되어 있습니다.</p>
-    <div class="gx-cards">
-      <a class="gx-card" href="./gallery/foundations.html">
-        <div class="gx-card__top"><span class="gx-card__name">Foundations</span><span class="gx-card__count">21</span></div>
-        <span class="gx-card__desc">타입 · 컬러 · 스페이싱 · 모션 · 레이아웃 · 가이드</span>
-        <span class="gx-card__go">specimen 보기 →</span>
-      </a>
-      <a class="gx-card" href="./gallery/atoms.html">
-        <div class="gx-card__top"><span class="gx-card__name">Atoms</span><span class="gx-card__count">18</span></div>
-        <span class="gx-card__desc">Button · Input · Badge · Avatar · Slider 등 최소 단위 프리미티브</span>
-        <span class="gx-card__go">갤러리 보기 →</span>
-      </a>
-      <a class="gx-card" href="./gallery/molecules.html">
-        <div class="gx-card__top"><span class="gx-card__name">Molecules</span><span class="gx-card__count">19</span></div>
-        <span class="gx-card__desc">Card · Alert · Tabs · Menu · 모바일 셸 등 조합 패턴</span>
-        <span class="gx-card__go">갤러리 보기 →</span>
-      </a>
-      <a class="gx-card" href="./gallery/organisms.html">
-        <div class="gx-card__top"><span class="gx-card__name">Organisms</span><span class="gx-card__count">6</span></div>
-        <span class="gx-card__desc">Dialog · Drawer · Popover · BottomSheet · Table</span>
-        <span class="gx-card__go">갤러리 보기 →</span>
-      </a>
+  <section class="gx-wrap gx-section">
+    <p class="gx-kicker">01 · Naming</p>
+    <h2 class="gx-h2">표기</h2>
+    <p class="gx-sub">법적 상호와 공개 표기는 다릅니다. 섞어 쓰면 계약·세금 문서에서 문제가 됩니다.</p>
+    <table class="bd-tbl">
+      <tr><th>디엔엘</th><td><b>법적 상호.</b> 견적서 · 계약서 · 세금계산서 · 사업자정보 · 개인정보 처리방침의 당사자 표기는 반드시 이것.</td></tr>
+      <tr><th>DNL STUDIO</th><td><b>공개 브랜드 표기.</b> 홈페이지 · 전문가 페이지 · 크몽 · 인스타그램 · 제안서 표지 · 문서 헤더/푸터.</td></tr>
+      <tr><th>DNL</th><td>좁은 자리. 파비콘 · 소형 워터마크 · 256px 이하.</td></tr>
+      <tr><th>DSDS</th><td>이 디자인 시스템의 약칭. <code>/dsds</code> · 리포지토리 · 패키지명에만. 화면 문구에는 쓰지 않음.</td></tr>
+    </table>
+  </section>
+
+  <section class="gx-wrap gx-section">
+    <p class="gx-kicker">02 · Wordmark</p>
+    <h2 class="gx-h2">워드마크</h2>
+    <p class="gx-sub"><code>DNL</code>은 Bold에 자간 0.02em, <code>STUDIO</code>는 Light 300에 자간 0.16em. 무게 대비로 DNL이 주(主), STUDIO가 종(從)으로 읽힙니다.</p>
+    <div class="bd-grid">
+      <div class="bd-wm"><span class="m"><b>DNL</b><i>STUDIO</i><s></s></span></div>
+      <div class="bd-wm is-dark"><span class="m"><b>DNL</b><i>STUDIO</i><s></s></span></div>
+    </div>
+    <div class="bd-grid">
+      <div class="bd-card"><b>최소 여백</b><p class="gx-sub" style="margin-top:6px">사방으로 <code>DNL</code>의 글자 높이만큼. 그 안에 다른 요소를 넣지 않습니다.</p></div>
+      <div class="bd-card"><b>소형 규칙</b><p class="gx-sub" style="margin-top:6px">256px 이하에서는 <code>STUDIO</code>를 뺍니다. 뭉개져서 오히려 지저분해집니다. 파비콘이 그 예입니다.</p></div>
+      <div class="bd-card"><b>금지</b><p class="gx-sub" style="margin-top:6px">기울이기 · 그림자 · 그러데이션 · 흑백 외 색 채우기 · 자간 임의 변경.</p></div>
     </div>
   </section>
 
-  <!-- COLOR + TYPE TASTER -->
-  <section class="gx-wrap gx-section" id="tokens">
-    <p class="gx-kicker">Foundations at a glance</p>
-    <h2 class="gx-h2">모노톤 + 단일 강조, 그리고 Pretendard</h2>
-    <p class="gx-sub">잉크(거의 검정)가 주요 텍스트와 기본 버튼을, 강조색은 링크·포커스·선택 상태와 화면당 가장 중요한 CTA 하나에만 절제해서 쓰입니다.</p>
-
-    <div class="gx-palette">
-      <div>
-        <div class="gx-ramp">
-          <span style="background:var(--gray-50)"></span>
-          <span style="background:var(--gray-100)"></span>
-          <span style="background:var(--gray-200)"></span>
-          <span style="background:var(--gray-300)"></span>
-          <span style="background:var(--gray-400)"></span>
-          <span style="background:var(--gray-500)"></span>
-          <span style="background:var(--gray-600)"></span>
-          <span style="background:var(--gray-700)"></span>
-          <span style="background:var(--gray-800)"></span>
-          <span style="background:var(--gray-900)"></span>
-          <span style="background:var(--gray-950)"></span>
-        </div>
-        <p class="gx-swlabel"><span>Neutral ramp · 표면과 텍스트의 전부</span><span>gray-50 → 950</span></p>
-      </div>
-      <div class="gx-accentline">
-        <span class="gx-accentline__chip"></span>
-        <span class="gx-accentline__text">단 하나의 액센트 — 링크 · 포커스 · 선택 상태와 화면당 가장 중요한 CTA 하나에만.</span>
-        <span class="gx-accentline__hex">accent · #2D5BFF</span>
-      </div>
+  <section class="gx-wrap gx-section">
+    <p class="gx-kicker">03 · Color &amp; Type</p>
+    <h2 class="gx-h2">색과 서체</h2>
+    <p class="gx-sub">모노톤 표면 위에 강조색 하나. 강조색이 둘이 되는 순간 어느 것도 강조가 아니게 됩니다.</p>
+    <div class="bd-grid">
+      <div class="bd-card"><div class="bd-sw" style="background:#2d5bff;border-color:#2d5bff"></div><b>Accent <code>#2D5BFF</code></b><p class="gx-sub" style="margin-top:6px">링크 · 포커스 링 · 선택/활성 · 화면당 단 하나의 주요 CTA. 그 외에는 쓰지 않습니다.</p></div>
+      <div class="bd-card"><div class="bd-sw" style="background:#0c0e11;border-color:#262a30"></div><b>Surface dark <code>#0C0E11</code></b><p class="gx-sub" style="margin-top:6px">다크 표면 기준값. 홈페이지 · 커버 이미지 · 카드뉴스 배경 공통.</p></div>
+      <div class="bd-card"><div class="bd-sw" style="display:flex;align-items:center;justify-content:center;background:var(--surface-sunken);font-family:var(--font-display);font-size:22px">가나다 Aa</div><b>Pretendard</b><p class="gx-sub" style="margin-top:6px">한글·영문을 한 패밀리로. 문서·웹·이미지 전부 동일. 대체 서체를 섞지 않습니다.</p></div>
     </div>
-
-    <div class="gx-type">
-      <div class="ln"><span class="tag">display</span><span style="font:var(--text-display);letter-spacing:var(--ls-tighter)">명료하게 Display</span></div>
-      <div class="ln"><span class="tag">h2</span><span style="font:var(--text-h2);letter-spacing:var(--ls-tight)">섹션 제목 Heading</span></div>
-      <div class="ln"><span class="tag">h4</span><span style="font:var(--text-h4)">카드 타이틀 Subhead</span></div>
-      <div class="ln"><span class="tag">body</span><span style="font:var(--text-body)">본문 텍스트입니다. Pretendard는 한글과 영문을 한 패밀리로 자연스럽게 담아냅니다.</span></div>
-      <div class="ln"><span class="tag">data</span><span style="font:var(--text-mono);color:var(--text-secondary)">123,456 · 98.6% · v0.1.0 — Pretendard tabular</span></div>
-    </div>
+    <p class="gx-sub" style="margin-top:16px">전체 색·타입 스케일은 <a href="./gallery/foundations.html" style="color:var(--accent)">Foundations</a>에 있습니다.</p>
   </section>
 
-  <!-- USAGE -->
-  <section class="gx-wrap gx-section" id="usage">
-    <p class="gx-kicker">Get started</p>
-    <h2 class="gx-h2">사용하기</h2>
-    <p class="gx-sub">빌드 도구는 필요 없습니다. 스타일은 <code>styles.css</code> 한 줄로 연결하고, React 컴포넌트는 소스에서 바로 import 하세요.</p>
-
-    <div class="gx-usagegrid">
-      <div>
-        <h3>1 · 스타일 연결</h3>
-        <div class="gx-code"><pre><span class="c">&lt;!-- 토큰 + 컴포넌트 CSS 전부 포함 --&gt;</span>
-&lt;link rel=<span class="k">"stylesheet"</span> href=<span class="k">"styles.css"</span>&gt;</pre></div>
-        <h3>3 · 다크 모드</h3>
-        <div class="gx-code"><pre><span class="c">// html(또는 임의의 조상)에 설정</span>
-document.documentElement
-  .setAttribute(<span class="k">"data-theme"</span>, <span class="k">"dark"</span>);</pre></div>
+  <section class="gx-wrap gx-section">
+    <p class="gx-kicker">04 · Voice</p>
+    <h2 class="gx-h2">문장</h2>
+    <p class="gx-sub">숫자는 근거와 함께 씁니다. 검증할 수 없는 수식어는 쓰지 않습니다.</p>
+    <div class="bd-grid">
+      <div class="bd-card">
+        <b style="color:var(--accent)">이렇게</b>
+        <ul class="bd-list">
+          <li>“8.3MB에서 66KB로 줄였습니다 (자사 실측)”</li>
+          <li>“납품 후 1개월은 단순 교체 월 2건까지 무상”</li>
+          <li>“검색 순위를 보장해 드리지는 않습니다”</li>
+        </ul>
       </div>
-      <div>
-        <h3>2 · 컴포넌트 import (React)</h3>
-        <div class="gx-code"><pre><span class="c">// 배럴에서</span>
-<span class="k">import</span> { Button, Card } <span class="k">from</span> <span class="k">"./components"</span>;
-
-<span class="c">// 또는 개별 파일에서</span>
-<span class="k">import</span> { Button } <span class="k">from</span>
-  <span class="k">"./components/atoms/Button.jsx"</span>;
-
-<span class="k">&lt;Button</span> variant=<span class="k">"primary"</span>&gt;저장하기<span class="k">&lt;/Button&gt;</span></pre></div>
+      <div class="bd-card">
+        <b>쓰지 않는 말</b>
+        <ul class="bd-list">
+          <li><span class="bd-bad">저렴 · 합리적 비용 · 가성비</span> — 최소 금액 필터를 무력화</li>
+          <li><span class="bd-bad">평생 무료</span> — 계약서와 정면 충돌</li>
+          <li><span class="bd-bad">최고 · 최상 · 완벽</span> — 검증 불가</li>
+          <li><span class="bd-bad">감성 · 감각적 · 트렌디 · 세련된</span> — 의미 없음</li>
+          <li><span class="bd-bad">무엇이든 · 다 해드립니다</span> — 니치를 지움</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <section class="gx-wrap gx-section">
+    <p class="gx-kicker">05 · Documents</p>
+    <h2 class="gx-h2">문서 서식</h2>
+    <p class="gx-sub">견적서 · 계약서 · 메일은 같은 서명 블록으로 끝납니다.</p>
+    <div class="bd-sign">
+      DNL STUDIO<br>강민관 드림<br>E. contact@dnl-studio.kr<br>dnl-studio.kr
+    </div>
+    <table class="bd-tbl">
+      <tr><th>당사자 표기</th><td><b>디엔엘</b> (법적 상호)</td></tr>
+      <tr><th>금액 표기</th><td>모든 금액 <b>VAT 별도</b>. 합계란에는 VAT 포함액을 병기.</td></tr>
+      <tr><th>표지 · 헤더</th><td>DNL STUDIO 워드마크 + <code>DEFINE NO LIMIT</code></td></tr>
+    </table>
+  </section>
+
+  <section class="gx-wrap gx-section">
+    <p class="gx-kicker">06 · Channels</p>
+    <h2 class="gx-h2">채널별 적용</h2>
+    <table class="bd-tbl">
+      <tr><th>dnl-studio.kr</th><td>다크 기준. 헤더는 워드마크, 푸터에 법적 상호(디엔엘 · 사업자등록번호).</td></tr>
+      <tr><th>아임웹 전문가</th><td>활동명 <code>DNL STUDIOㅣ건축·인테리어</code>. 포트폴리오 커버는 750×534 다크 템플릿 — 사이트 <b>메인 히어로</b> 캡처만.</td></tr>
+      <tr><th>크몽</th><td>썸네일·상세 모두 같은 커버 템플릿. 가격은 표준 단가표 기준.</td></tr>
+      <tr><th>인스타그램</th><td>트랙 A 카드뉴스는 이 시스템 고정. 트랙 B 작업 케이스는 사이트와 같은 흑백.</td></tr>
+      <tr><th>제안서 · 견적서</th><td>PDF로 발송. 표지는 워드마크, 본문 당사자 표기는 「디엔엘」.</td></tr>
+    </table>
+  </section>
+
   <footer class="gx-wrap gx-foot">
-    <strong>DNL STUDIO Design System</strong> · v0.1.0 · 아토믹 구조(atoms / molecules / organisms) · 4px 그리드
+    <strong>DNL STUDIO Design System</strong> · Brand · 이 문서가 표기·색·문장의 기준 원본입니다.
     <ul>
-      <li><strong>폰트</strong>: Pretendard 단일 패밀리를 <code>assets/fonts/</code>에서 self-host 합니다(가변 woff2). 숫자는 tabular 피겨. 외부 CDN·렌더 블로킹 요청이 없고 오프라인에서도 동작합니다.</li>
-      <li><strong>아이콘</strong>: Lucide(monoline, stroke 2). 갤러리에는 인라인 SVG로 표기했습니다.</li>
-      <li><strong>로고</strong>: 현재 워드마크는 플레이스홀더입니다 — 실제 로고로 교체 가능.</li>
-      <li><strong>문서</strong>: <a href="./README.md">README.md</a> · <a href="./README.ko.md">README.ko.md</a> · <a href="./SKILL.md">SKILL.md</a></li>
+      <li><strong>적용 범위</strong>: DNL STUDIO 이름으로 나가는 모든 자산 — 홈페이지 · 제안서 · 견적서 · 계약서 · 아임웹 전문가 페이지 · 크몽.</li>
+      <li><strong>화면 토큰</strong>: <a href="./gallery/foundations.html">Foundations</a> · <a href="./gallery/ux-writing.html">UX Writing</a></li>
     </ul>
   </footer>
 </main>
