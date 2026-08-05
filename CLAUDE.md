@@ -33,13 +33,15 @@
 
 **원칙**
 - 강조색은 역할 이름으로만 부른다: accent / 강조색. 안료 이름 "cobalt/코발트"는 코드·문서·커밋 어디에도 다시 쓰지 않는다.
-- 서체는 Pretendard 하나뿐. 다른 폰트(특히 Geist Mono)를 추가하지 않는다. 숫자는 tabular-nums.
+- 본문·UI 서체는 Pretendard 하나뿐. 숫자는 tabular-nums. Geist Mono 등을 추가하지 않는다.
+- 예외 하나 — **워드마크만 Montserrat Bold 700**이며 이미 아웃라인 패스로 변환돼 있다(폰트 로드 없음). 본문·UI에 Montserrat를 쓰지 않는다. (2026-08-05 대표 확정)
 - 아이콘은 Lucide 계열 모노라인(stroke 2, currentColor)만.
 - 색·간격·타이포 변경은 토큰을 거친다. 페이지/컴포넌트에 값 하드코딩 금지. 4px 그리드.
 
 **절대 건드리지 말 것**
 - 내비게이션에 Guide·GitHub 메뉴를 다시 넣지 않는다 (2026-07 의도적으로 제거).
-- `DNL` 워드마크 파비콘 세트(`assets/favicon*`, `favicon.ico`)는 확정된 브랜드 마크 — 임의 교체 금지.
+- 파비콘 세트(`assets/favicon*`, `favicon.ico`)는 **심볼**(기울어진 고리) 기반이다 — 임의 교체 금지.
+- `assets/brand/`의 심볼·워드마크·락업 SVG는 확정 자산이다. 기하 규격(기울기 −38° · 코발트 270° 15% · 원근 ±40%)을 바꾸지 않는다.
 - 표기 규칙(디엔엘 / DNL STUDIO / DNL / DSDS)과 금지어는 `brand.html`이 원본. 화면 문구에 `DSDS`를 쓰지 않는다.
 - 루트 `SKILL.md`와 `.claude/skills/`는 삭제하지 않는다.
 
